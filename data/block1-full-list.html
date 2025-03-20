@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云笔记</title>
+    <meta name="description" content="云笔记，云端笔记，云端收藏，收藏，干货，技巧，记忆，记录，学习">
+    <meta name="keywords" content="云笔记，云端笔记，云端收藏，收藏，干货，技巧，记忆，记录，学习">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>云笔记</h1>
+        <nav class="nav-menu">
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-list">
+                <li><a href="../index.html">返回主页</a></li>
+                <li><a href="../data/block1-full-list.html">娱乐八卦</a></li>
+                <li><a href="../data/block2-full-list.html">生活助手</a></li>
+                <li><a href="../data/block3-full-list.html">四处观察</a></li>
+                <li><a href="../data/block4-full-list.html">实用链接</a></li>
+                <li><a href="../data/block5-full-list.html">德语频道</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="full-list">
+            <h2>文章列表</h2>
+            <ul class="article-list" id="block1-list"></ul>
+        </section>
+    </main>
+
+    <div class="pagination">
+        <button id="prev-page">上一页</button>
+        <span id="page-info"></span>
+        <button id="next-page">下一页</button>
+    </div>
+
+    <footer>
+        <p>© 2025 yunbiji云笔记. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        const currentCategory = 'block1';
+    </script>
+</body>
+</html>
