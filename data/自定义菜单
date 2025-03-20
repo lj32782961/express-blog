@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能选择菜单优化版</title>
+    <style>
+        
+    </style>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <article>
+        <h2>请选择任意文本测试</h2>
+        <p>这是一个支持跨设备的选择菜单示例。尝试选择不同位置的文本，菜单会自动调整位置避免超出屏幕边界，并始终靠近您的操作位置。</p>
+        <p>长文本测试：Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </article>
+
+    <div id="contextMenu"></div>
+    <div id="copyMessage">复制成功！</div>
+    <div id="translatePopup">
+        <textarea readonly></textarea>
+        <button onclick="closeTranslatePopup()">关闭</button>
+    </div>
+
+    <!-- <script src="../js/script.js"></script> -->
+    <script src="../js/menu.js"></script>
+</body>
+</html>
