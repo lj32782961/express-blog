@@ -699,7 +699,7 @@ async function sendMessageToAPI(message) {
 // }
 // // 页面初始化时加载
 // window.addEventListener('DOMContentLoaded', loadConfig);
-
+let keys;
 let isSettingsLoaded = false; // 添加标志位，表示 settings 是否加载完成
 async function loadSettings() {
     try {
