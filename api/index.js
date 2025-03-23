@@ -25,12 +25,8 @@ app.use('/js', express.static(path.join(__dirname, '../js'), {
   maxAge: '1d' // 缓存js 1天
 }));
 
-app.use('/assets', express.static(path.join(__dirname, '../assets'), {
-  maxAge: '7d' // 缓存assets 7天
-}));
-app.use('/data', express.static(path.join(__dirname, '../data'), {
-  maxAge: '7d' // 缓存data 7天
-}));
+app.use('/assets', express.static(path.join(__dirname, '../assets')));
+app.use('/data', express.static(path.join(__dirname, '../data')));
 //定义根目录
 app.use(express.static(path.join(__dirname, '..')));
 
