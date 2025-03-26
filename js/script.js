@@ -641,7 +641,7 @@ async function sendMessageToAPI(message) {
                         }],
                         generationConfig: {
                             maxOutputTokens: maxToken,
-                            Temperature: '0.3',// 翻译任务需要更高的确定性
+                            temperature: '0.3',// 翻译任务需要更高的确定性
                             topP: '0.7',
                             topK: '20'
                         }
