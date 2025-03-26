@@ -17,9 +17,10 @@ app.use(express.json());
 
 // 使用 express.static 中间件来提供静态文件
 // app.use(express.static(path.join(__dirname, '../public')));//不再使用public文件夹
-app.use('/css', express.static(path.join(__dirname, '../css'), {
-  maxAge: '1d' // 缓存css 1天
-}));
+// app.use('/css', express.static(path.join(__dirname, '../css'), {
+//   maxAge: '1d' // 缓存css 1天
+// }));
+app.use('/css', express.static(path.join(__dirname, '../css')));
 
 app.use('/js', express.static(path.join(__dirname, '../js')));
 
