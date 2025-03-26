@@ -640,7 +640,10 @@ async function sendMessageToAPI(message) {
                             parts: [{ text: message }]
                         }],
                         generationConfig: {
-                            maxOutputTokens: maxToken
+                            maxOutputTokens: maxToken,
+                            Temperature: '0.3',// 翻译任务需要更高的确定性
+                            topP: '0.7',
+                            topK: '20'
                         }
                     }),
                     signal: controller.signal
