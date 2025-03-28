@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const prevBtn = document.querySelector('#prev-page');
         const nextBtn = document.querySelector('#next-page');
         const pageInfo = document.querySelector('#page-info');
-        const itemsPerPage = 10;
+        const itemsPerPage = 100;
         let currentPage = 1;
 
         // 清空列表，防止显示上一次数据
